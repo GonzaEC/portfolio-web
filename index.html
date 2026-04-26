@@ -11,13 +11,10 @@
 </head>
 <body>
 
-    <!-- Navbar -->
-    <nav class="navbar">
-        <span class="nav-logo">GEC</span>
+    <nav class="navbar" id="navbar">
+        <a href="#inicio" class="nav-logo">GEC</a>
         <button class="hamburger" aria-label="Abrir menú" aria-expanded="false">
-            <span></span>
-            <span></span>
-            <span></span>
+            <span></span><span></span><span></span>
         </button>
         <ul class="nav-links" id="nav-links">
             <li><a href="#sobre-mi">Sobre mí</a></li>
@@ -28,9 +25,12 @@
         </ul>
     </nav>
 
-    <!-- Hero -->
     <section class="hero" id="inicio">
         <div class="hero-content">
+            <div class="hero-badge">
+                <span class="hero-badge-dot"></span>
+                Disponible para trabajar
+            </div>
             <p class="hero-greeting">Hola, soy</p>
             <h1 class="hero-name">Gonzalo Echeverría Crenna</h1>
             <p class="hero-title">Desarrollador Backend &middot; Estudiante de Lic. en Sistemas de Información</p>
@@ -42,11 +42,10 @@
         </div>
     </section>
 
-    <!-- Sobre mí -->
     <section class="section" id="sobre-mi">
         <div class="container">
             <h2 class="section-title">Sobre mí</h2>
-            <div class="about-content">
+            <div class="about-content reveal">
                 <p>
                     Estudiante avanzado de Licenciatura en Sistemas de Información (UNLu) con sólida formación
                     en desarrollo backend orientado a objetos, arquitectura de software y bases de datos relacionales.
@@ -59,12 +58,11 @@
         </div>
     </section>
 
-    <!-- Skills -->
     <section class="section section-alt" id="skills">
         <div class="container">
             <h2 class="section-title">Habilidades técnicas</h2>
             <div class="skills-grid">
-                <div class="skill-category">
+                <div class="skill-category reveal" style="--delay: 0s">
                     <h3>Lenguajes &amp; Frameworks</h3>
                     <div class="tags">
                         <span class="tag">Java</span>
@@ -77,7 +75,7 @@
                         <span class="tag">HTML/CSS</span>
                     </div>
                 </div>
-                <div class="skill-category">
+                <div class="skill-category reveal" style="--delay: 0.1s">
                     <h3>Bases de Datos</h3>
                     <div class="tags">
                         <span class="tag">SQL Server</span>
@@ -87,7 +85,7 @@
                         <span class="tag">Álgebra relacional</span>
                     </div>
                 </div>
-                <div class="skill-category">
+                <div class="skill-category reveal" style="--delay: 0.2s">
                     <h3>Arquitectura &amp; Patrones</h3>
                     <div class="tags">
                         <span class="tag">POO</span>
@@ -97,7 +95,7 @@
                         <span class="tag">RMI</span>
                     </div>
                 </div>
-                <div class="skill-category">
+                <div class="skill-category reveal" style="--delay: 0.3s">
                     <h3>Herramientas &amp; Redes</h3>
                     <div class="tags">
                         <span class="tag">Git</span>
@@ -110,13 +108,12 @@
         </div>
     </section>
 
-    <!-- Proyectos -->
     <section class="section" id="proyectos">
         <div class="container">
             <h2 class="section-title">Proyectos</h2>
             <div class="projects-grid">
 
-                <div class="project-card">
+                <div class="project-card reveal" style="--delay: 0s">
                     <div class="project-header">
                         <h3>Poker con Dados</h3>
                         <span class="project-tech">Java</span>
@@ -127,13 +124,15 @@
                         <li>Sistema de apuestas al estilo Póker sobre el juego de la Generala, con gestión de estado distribuido entre clientes.</li>
                         <li>Buenas prácticas: separación de responsabilidades, código mantenible y escalable.</li>
                     </ul>
-                    <a href="https://github.com/GonzaEC/FINALPOO-GENERALA" target="_blank" class="project-link">Ver en GitHub →</a>
+                    <a href="https://github.com/GonzaEC/FINALPOO-GENERALA" target="_blank" rel="noopener" class="project-link">
+                        Ver en GitHub <span aria-hidden="true">→</span>
+                    </a>
                 </div>
 
-                <div class="project-card">
+                <div class="project-card reveal" style="--delay: 0.15s">
                     <div class="project-header">
                         <h3>Gestor de Artículos</h3>
-                        <span class="project-tech">C# · .NET · WinForms · SQL Server</span>
+                        <span class="project-tech">C# · .NET · SQL Server</span>
                     </div>
                     <p class="project-subtitle">Aplicación de escritorio CRUD</p>
                     <ul class="project-points">
@@ -147,13 +146,12 @@
         </div>
     </section>
 
-    <!-- Educación -->
     <section class="section section-alt" id="educacion">
         <div class="container">
             <h2 class="section-title">Educación &amp; Certificaciones</h2>
             <div class="edu-section">
 
-                <div class="edu-card">
+                <div class="edu-card reveal">
                     <div class="edu-icon">🎓</div>
                     <div class="edu-info">
                         <h3>Licenciatura en Sistemas de Información</h3>
@@ -163,21 +161,21 @@
                 </div>
 
                 <div class="certs-grid">
-                    <div class="cert-card">
+                    <div class="cert-card reveal" style="--delay: 0s">
                         <div class="cert-icon">📜</div>
                         <div>
                             <p class="cert-name">Curso C# Nivel 2 (.NET + SQL Server)</p>
                             <p class="cert-issuer">Maxi Programa · feb. 2026</p>
                         </div>
                     </div>
-                    <div class="cert-card">
+                    <div class="cert-card reveal" style="--delay: 0.1s">
                         <div class="cert-icon">📜</div>
                         <div>
                             <p class="cert-name">Java</p>
                             <p class="cert-issuer">OpenBootcamp</p>
                         </div>
                     </div>
-                    <div class="cert-card">
+                    <div class="cert-card reveal" style="--delay: 0.2s">
                         <div class="cert-icon">📜</div>
                         <div>
                             <p class="cert-name">Python</p>
@@ -190,21 +188,20 @@
         </div>
     </section>
 
-    <!-- Contacto -->
     <section class="section" id="contacto">
         <div class="container">
             <h2 class="section-title">Contacto</h2>
             <p class="contact-subtitle">¿Querés ponerte en contacto? Escribime o encontrame en mis redes.</p>
-            <div class="contact-links">
+            <div class="contact-links reveal">
                 <a href="mailto:gonzaloecheverriacrenna1@gmail.com" class="contact-item">
                     <span class="contact-icon">✉️</span>
                     <span>gonzaloecheverriacrenna1@gmail.com</span>
                 </a>
-                <a href="https://www.linkedin.com/in/gonzalo-echeverrria-crenna/" target="_blank" class="contact-item">
+                <a href="https://www.linkedin.com/in/gonzalo-echeverrria-crenna/" target="_blank" rel="noopener" class="contact-item">
                     <span class="contact-icon">💼</span>
                     <span>LinkedIn — gonzalo-echeverrria-crenna</span>
                 </a>
-                <a href="https://github.com/GonzaEC" target="_blank" class="contact-item">
+                <a href="https://github.com/GonzaEC" target="_blank" rel="noopener" class="contact-item">
                     <span class="contact-icon">🐙</span>
                     <span>GitHub — GonzaEC</span>
                 </a>
@@ -212,28 +209,10 @@
         </div>
     </section>
 
-    <!-- Footer -->
     <footer class="footer">
         <p>© 2026 Gonzalo Echeverría Crenna &middot; Buenos Aires, Argentina</p>
     </footer>
 
-    <script>
-        const hamburger = document.querySelector('.hamburger');
-        const navLinks = document.getElementById('nav-links');
-
-        hamburger.addEventListener('click', () => {
-            const isOpen = navLinks.classList.toggle('open');
-            hamburger.classList.toggle('active', isOpen);
-            hamburger.setAttribute('aria-expanded', isOpen);
-        });
-
-        navLinks.querySelectorAll('a').forEach(link => {
-            link.addEventListener('click', () => {
-                navLinks.classList.remove('open');
-                hamburger.classList.remove('active');
-                hamburger.setAttribute('aria-expanded', 'false');
-            });
-        });
-    </script>
+    <script src="script.js" defer></script>
 </body>
 </html>
