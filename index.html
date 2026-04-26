@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gonzalo Echeverría Crenna — Backend Developer</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar">
+        <span class="nav-logo">GEC</span>
+        <ul class="nav-links">
+            <li><a href="#sobre-mi">Sobre mí</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#proyectos">Proyectos</a></li>
+            <li><a href="#educacion">Educación</a></li>
+            <li><a href="#contacto">Contacto</a></li>
+        </ul>
+    </nav>
+
+    <!-- Hero -->
+    <section class="hero" id="inicio">
+        <div class="hero-content">
+            <p class="hero-greeting">Hola, soy</p>
+            <h1 class="hero-name">Gonzalo Echeverría Crenna</h1>
+            <p class="hero-title">Desarrollador Backend &middot; Estudiante de Lic. en Sistemas de Información</p>
+            <p class="hero-location">Buenos Aires, Argentina</p>
+            <div class="hero-buttons">
+                <a href="#proyectos" class="btn btn-primary">Ver proyectos</a>
+                <a href="#contacto" class="btn btn-secondary">Contacto</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sobre mí -->
+    <section class="section" id="sobre-mi">
+        <div class="container">
+            <h2 class="section-title">Sobre mí</h2>
+            <div class="about-content">
+                <p>
+                    Estudiante avanzado de Licenciatura en Sistemas de Información (UNLu) con sólida formación
+                    en desarrollo backend orientado a objetos, arquitectura de software y bases de datos relacionales.
+                </p>
+                <p>
+                    Tengo experiencia en proyectos personales con Java, C#/.NET y SQL Server, con especial interés en
+                    backend, arquitectura en capas y buenas prácticas de desarrollo.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills -->
+    <section class="section section-alt" id="skills">
+        <div class="container">
+            <h2 class="section-title">Habilidades técnicas</h2>
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <h3>Lenguajes &amp; Frameworks</h3>
+                    <div class="tags">
+                        <span class="tag">Java</span>
+                        <span class="tag">Spring Boot</span>
+                        <span class="tag">C#</span>
+                        <span class="tag">.NET</span>
+                        <span class="tag">WinForms</span>
+                        <span class="tag">ADO.NET</span>
+                        <span class="tag">C</span>
+                        <span class="tag">HTML/CSS</span>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3>Bases de Datos</h3>
+                    <div class="tags">
+                        <span class="tag">SQL Server</span>
+                        <span class="tag">Diseño relacional</span>
+                        <span class="tag">Triggers</span>
+                        <span class="tag">Stored Procedures</span>
+                        <span class="tag">Álgebra relacional</span>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3>Arquitectura &amp; Patrones</h3>
+                    <div class="tags">
+                        <span class="tag">POO</span>
+                        <span class="tag">MVC</span>
+                        <span class="tag">Observer</span>
+                        <span class="tag">Arquitectura en capas</span>
+                        <span class="tag">RMI</span>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3>Herramientas &amp; Redes</h3>
+                    <div class="tags">
+                        <span class="tag">Git</span>
+                        <span class="tag">Docker</span>
+                        <span class="tag">TCP/IP</span>
+                        <span class="tag">Estructuras de datos</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Proyectos -->
+    <section class="section" id="proyectos">
+        <div class="container">
+            <h2 class="section-title">Proyectos</h2>
+            <div class="projects-grid">
+
+                <div class="project-card">
+                    <div class="project-header">
+                        <h3>Poker con Dados</h3>
+                        <span class="project-tech">Java</span>
+                    </div>
+                    <p class="project-subtitle">Generala Multijugador con Apuestas</p>
+                    <ul class="project-points">
+                        <li>Aplicación multijugador con POO, RMI (cliente-servidor), patrón Observer y arquitectura MVC.</li>
+                        <li>Sistema de apuestas al estilo Póker sobre el juego de la Generala, con gestión de estado distribuido entre clientes.</li>
+                        <li>Buenas prácticas: separación de responsabilidades, código mantenible y escalable.</li>
+                    </ul>
+                    <a href="https://github.com/GonzaEC/FINALPOO-GENERALA" target="_blank" class="project-link">Ver en GitHub →</a>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-header">
+                        <h3>Gestor de Artículos</h3>
+                        <span class="project-tech">C# · .NET · WinForms · SQL Server</span>
+                    </div>
+                    <p class="project-subtitle">Aplicación de escritorio CRUD</p>
+                    <ul class="project-points">
+                        <li>Aplicación de escritorio con operaciones CRUD completas: alta, baja, modificación y consulta.</li>
+                        <li>Arquitectura en capas con ADO.NET separando lógica de negocio, acceso a datos y presentación.</li>
+                        <li>Listados dinámicos, filtros de búsqueda y administración de marcas y categorías relacionadas.</li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Educación -->
+    <section class="section section-alt" id="educacion">
+        <div class="container">
+            <h2 class="section-title">Educación &amp; Certificaciones</h2>
+            <div class="edu-section">
+
+                <div class="edu-card">
+                    <div class="edu-icon">🎓</div>
+                    <div class="edu-info">
+                        <h3>Licenciatura en Sistemas de Información</h3>
+                        <p class="edu-place">Universidad Nacional de Luján (UNLu)</p>
+                        <p class="edu-date">2023 – 2028 (en curso)</p>
+                    </div>
+                </div>
+
+                <div class="certs-grid">
+                    <div class="cert-card">
+                        <div class="cert-icon">📜</div>
+                        <div>
+                            <p class="cert-name">Curso C# Nivel 2 (.NET + SQL Server)</p>
+                            <p class="cert-issuer">Maxi Programa · feb. 2026</p>
+                        </div>
+                    </div>
+                    <div class="cert-card">
+                        <div class="cert-icon">📜</div>
+                        <div>
+                            <p class="cert-name">Java</p>
+                            <p class="cert-issuer">OpenBootcamp</p>
+                        </div>
+                    </div>
+                    <div class="cert-card">
+                        <div class="cert-icon">📜</div>
+                        <div>
+                            <p class="cert-name">Python</p>
+                            <p class="cert-issuer">OpenBootcamp</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Contacto -->
+    <section class="section" id="contacto">
+        <div class="container">
+            <h2 class="section-title">Contacto</h2>
+            <p class="contact-subtitle">¿Querés ponerte en contacto? Escribime o encontrame en mis redes.</p>
+            <div class="contact-links">
+                <a href="mailto:gonzaloecheverriacrenna1@gmail.com" class="contact-item">
+                    <span class="contact-icon">✉️</span>
+                    <span>gonzaloecheverriacrenna1@gmail.com</span>
+                </a>
+                <a href="https://www.linkedin.com/in/gonzalo-echeverrria-crenna/" target="_blank" class="contact-item">
+                    <span class="contact-icon">💼</span>
+                    <span>LinkedIn — gonzalo-echeverrria-crenna</span>
+                </a>
+                <a href="https://github.com/GonzaEC" target="_blank" class="contact-item">
+                    <span class="contact-icon">🐙</span>
+                    <span>GitHub — GonzaEC</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>© 2026 Gonzalo Echeverría Crenna &middot; Buenos Aires, Argentina</p>
+    </footer>
+
+</body>
+</html>
